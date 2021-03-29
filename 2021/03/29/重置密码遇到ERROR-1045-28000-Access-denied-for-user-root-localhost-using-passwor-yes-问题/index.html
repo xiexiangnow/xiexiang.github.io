@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="翔奕时代">
 <meta property="og:description" content="如标题所示，这类的问题一般都是由于密码错误导致的，解决的办法就是重置密码；假设我们使用的是root账户，重置密码的基本思路如下：  1、放开mysql密码验证的配置；2、修改mysql的root密码为你自设密码；3、再将mysql密码验证加上；  1、跳过mysql密码验证过程；#vim &#x2F;etc&#x2F;my.cnf   在里面搜索mysqld，在里面有一个[mysqld]的文档段，在[mysqld]配">
 <meta property="article:published_time" content="2021-03-29T02:30:36.000Z">
-<meta property="article:modified_time" content="2021-03-29T03:14:26.921Z">
+<meta property="article:modified_time" content="2021-03-29T03:44:23.515Z">
 <meta property="article:author" content="谢翔">
 <meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
@@ -416,7 +416,7 @@
 如果是非docker 使用 /etc/init.d/mysql restart(有些用户可能需要使用/etc/init.d/mysqld restart)</code></pre><h4 id="3、修改mysql的root密码"><a href="#3、修改mysql的root密码" class="headerlink" title="3、修改mysql的root密码"></a>3、修改mysql的root密码</h4><pre><code>上面跳过密码验证并重启之后，进去mysql是不需要任何密码校验的；
 进入到mysql里面进行如下操作进行修改mysql的root密码
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- use mysql;</span><br><span class="line">- update user set password &#x3D; password(&#39;新密码&#39;) where user &#x3D; &#39;root&#39;;</span><br><span class="line">- flush privileges;</span><br><span class="line">- quit;</span><br></pre></td></tr></table></figure>
-此时的mysql的root密码已经被更改</code></pre><h4 id="4、改回mysql的密码校验hex"><a href="#4、改回mysql的密码校验hex" class="headerlink" title="4、改回mysql的密码校验hex"></a>4、改回mysql的密码校验hex</h4><pre><code>再次进入到 /etc/my.cnf里面 
+此时的mysql的root密码已经被更改</code></pre><h4 id="4、改回mysql的密码校验"><a href="#4、改回mysql的密码校验" class="headerlink" title="4、改回mysql的密码校验"></a>4、改回mysql的密码校验</h4><pre><code>再次进入到 /etc/my.cnf里面 
 找到之前新增的内容的地方，删掉或者注释
 
 最后一步，一定记得重启mysql服务
@@ -715,7 +715,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、跳过mysql密码验证过程；"><span class="nav-number">1.</span> <span class="nav-text">1、跳过mysql密码验证过程；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、重启mysql服务"><span class="nav-number">2.</span> <span class="nav-text">2、重启mysql服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、修改mysql的root密码"><span class="nav-number">3.</span> <span class="nav-text">3、修改mysql的root密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、改回mysql的密码校验hex"><span class="nav-number">4.</span> <span class="nav-text">4、改回mysql的密码校验hex</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、跳过mysql密码验证过程；"><span class="nav-number">1.</span> <span class="nav-text">1、跳过mysql密码验证过程；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、重启mysql服务"><span class="nav-number">2.</span> <span class="nav-text">2、重启mysql服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、修改mysql的root密码"><span class="nav-number">3.</span> <span class="nav-text">3、修改mysql的root密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、改回mysql的密码校验"><span class="nav-number">4.</span> <span class="nav-text">4、改回mysql的密码校验</span></a></li></ol></div>
             
 
           </div>
