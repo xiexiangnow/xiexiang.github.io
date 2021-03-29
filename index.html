@@ -326,6 +326,166 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xiexiangnow.github.io/2021/03/29/%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81%E9%81%87%E5%88%B0ERROR-1045-28000-Access-denied-for-user-root-localhost-using-passwor-yes-%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢翔">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://www.xiang007.com/img/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="翔奕时代">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/03/29/%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81%E9%81%87%E5%88%B0ERROR-1045-28000-Access-denied-for-user-root-localhost-using-passwor-yes-%E9%97%AE%E9%A2%98/" itemprop="url">重置密码遇到ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using passwor:yes)问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-29T10:30:36+08:00">
+                2021-03-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          如标题所示，这类的问题一般都是由于密码错误导致的，解决的办法就是重置密码；假设我们使用的是root账户，重置密码的基本思路如下：
+
+1、放开mysql密码验证的配置；2、修改mysql的root密码为你自设密码；3、再将mysql密码验证加上；
+
+1、跳过mysql密码验证过程；#vim /etc/my.cnf 
+
+在里面搜索mysqld，在里面有一个[mysqld]的文档段，在[mysqld]配置下加上skip-grant-tables 
+
+保存并退出2、重启mysql服务如果是docker就直接docker restart mysql 或者 docker restart percona 
+
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/03/29/%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81%E9%81%87%E5%88%B0ERROR-1045-28000-Access-denied-for-user-root-localhost-using-passwor-yes-%E9%97%AE%E9%A2%98/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://xiexiangnow.github.io/2021/02/01/%E6%9E%81%E7%AE%80%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%91%98%E5%8F%96/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1719,158 +1879,6 @@ apidoc是一款比较好用的开发文档生成工具，操作简单易理解�
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xiexiangnow.github.io/2020/07/09/Warning-Accessing-non-existent-property-quot-quot-of-module-export/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="谢翔">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://www.xiang007.com/img/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="翔奕时代">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/07/09/Warning-Accessing-non-existent-property-quot-quot-of-module-export/" itemprop="url">Warning: Accessing non-existent property &quot;?&quot; of module export...</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-09T13:47:57+08:00">
-                2020-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          编译项目的时候提示如下警告，如何才能定位到警告的具体位置呢
-1234567(node:48258) Warning: Accessing non-existent property 'lineno' of module exports inside circular dependency(Use `node --trace-warnings ...` to show where the warning was created)(node:48258) Warning: Accessing non-existent property 'column' of module exports insi
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/07/09/Warning-Accessing-non-existent-property-quot-quot-of-module-export/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1925,7 +1933,7 @@ apidoc是一款比较好用的开发文档生成工具，操作简单易理解�
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">63</span>
+                  <span class="site-state-item-count">64</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
