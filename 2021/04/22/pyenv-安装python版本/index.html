@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="说明在python虚拟环境搭建的很多时候都用到了pyenv，pyenv主要用于管理python的不同版本，便于在开发或者线上环境下随时切换，我们发现在利用pyenv install 3.7.5安装python版本的很多时候都被墙了，由于是这个命令是直接拉取的国外资源，所以在执行这个命令的时候基本不成功 解决办法1、直接访问python官网https:&#x2F;&#x2F;www.python.org&#x2F;downloa">
+<meta name="description" content="说明在python虚拟环境搭建的很多时候都用到了pyenv，pyenv主要用于管理python的不同版本，便于在开发或者线上环境下随时切换，我们发现在利用pyenv install 3.7.5安装python版本的很多时候都被墙了，由于是这个命令是直接拉取的国外资源，所以在执行这个命令的时候基本不成功 解决办法1、直接访问python官网，找到Downloads下的Source code，就能看到">
 <meta property="og:type" content="article">
 <meta property="og:title" content="pyenv 安装python版本">
 <meta property="og:url" content="http://xiexiangnow.github.io/2021/04/22/pyenv-%E5%AE%89%E8%A3%85python%E7%89%88%E6%9C%AC/index.html">
 <meta property="og:site_name" content="翔奕时代">
-<meta property="og:description" content="说明在python虚拟环境搭建的很多时候都用到了pyenv，pyenv主要用于管理python的不同版本，便于在开发或者线上环境下随时切换，我们发现在利用pyenv install 3.7.5安装python版本的很多时候都被墙了，由于是这个命令是直接拉取的国外资源，所以在执行这个命令的时候基本不成功 解决办法1、直接访问python官网https:&#x2F;&#x2F;www.python.org&#x2F;downloa">
+<meta property="og:description" content="说明在python虚拟环境搭建的很多时候都用到了pyenv，pyenv主要用于管理python的不同版本，便于在开发或者线上环境下随时切换，我们发现在利用pyenv install 3.7.5安装python版本的很多时候都被墙了，由于是这个命令是直接拉取的国外资源，所以在执行这个命令的时候基本不成功 解决办法1、直接访问python官网，找到Downloads下的Source code，就能看到">
 <meta property="og:image" content="http://xiexiangnow.github.io/img/python-pyenv-01.png">
 <meta property="og:image" content="http://xiexiangnow.github.io/img/python-pyenv-02.png">
 <meta property="article:published_time" content="2021-04-22T06:14:41.000Z">
-<meta property="article:modified_time" content="2021-04-22T06:36:45.716Z">
+<meta property="article:modified_time" content="2021-04-22T06:43:08.663Z">
 <meta property="article:author" content="谢翔">
 <meta property="article:tag" content="pyenv，python环境搭建，python-pyenv环境搭建，python版本安装">
 <meta name="twitter:card" content="summary">
@@ -408,7 +408,7 @@
 
       
         <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>在python虚拟环境搭建的很多时候都用到了pyenv，pyenv主要用于管理python的不同版本，便于在开发或者线上环境下随时切换，我们发现在利用pyenv install 3.7.5安装python版本的很多时候都被墙了，由于是这个命令是直接拉取的国外资源，所以在执行这个命令的时候基本不成功</p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>1、直接访问python官网<a href="https://www.python.org/downloads/source/，找到Downloads下的Source" target="_blank" rel="noopener">https://www.python.org/downloads/source/，找到Downloads下的Source</a> code，就能看到各种python的版本<br><img src="/img/python-pyenv-01.png" alt="2020"><br>官网地址：<a href="https://www.python.org/downloads/source/" target="_blank" rel="noopener">https://www.python.org/downloads/source/</a></p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>1、直接访问python官网，找到Downloads下的Source code，就能看到各种python的版本<br><img src="/img/python-pyenv-01.png" alt="2020"><br>官网地址：<a href="https://www.python.org/downloads/source/" target="_blank" rel="noopener">https://www.python.org/downloads/source/</a></p>
 <p>2、需下载Download XZ compressed source tarball这个资源 </p>
 <p>3、执行下载</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;www.python.org&#x2F;ftp&#x2F;python&#x2F;3.9.4&#x2F;Python-3.9.4.tar.xz -P ~&#x2F;.pyenv&#x2F;cache</span><br></pre></td></tr></table></figure>
@@ -525,6 +525,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2021/04/22/supervisor%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" rel="prev" title="supervisor的安装与使用">
+                supervisor的安装与使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -608,7 +612,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">65</span>
+                  <span class="site-state-item-count">66</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -746,9 +750,11 @@
     本站访客数:<span id="busuanzi_value_site_uv"></span>
   </span>
   </div>
+  <div><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" rel="noopener">渝ICP备2021004548号</a></div>
 
   
 </div>
+
 
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
